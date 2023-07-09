@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Re-Electronics</title>
+      <link rel="stylesheet" href="css/home.css">
+      <link rel="stylesheet" href="css/sidebar.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+1&family=Montserrat:wght@300&family=Poppins&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <!--navigation content in nav.js--> 
+    </nav> 
+
+
+    <!--hero section-->
+    <header class="hero-section">   
+        <div class="innercontent">
+            <h1 id="welcome-message"></h1>
+            <h1 id="ecom-message"></h1>
+            <p></p>
+            <div class="container">
+                <h1></h1>
+                <div id="content">
+                  <!-- Content will be dynamically updated -->
+                </div>
+              </div>
+        </div>
+    </header>
+
+    
+
+
+
+
+    <section id="laptop-products">
+        
+    </section>
+    
+    <section id="earphone-products">
+
+    </section>
+    
+
+
+
+    
+
+
+    <footer>
+       <!--footer.js--> 
+    </footer>
+
+
+
+    <script src="js/nav.js"></script> 
+    <script src="js/home.js"></script>
+    <script src="js/footer.js"></script> 
+
+    
+
+
+
+
+
+
+    <script>
+        getProducts('Laptop').then(data => createProductSlider(data, '#laptop-products', 'Laptops'))
+        getProducts('Mobile').then(data => createProductSlider(data, '#laptop-products', 'Mobiles'))
+        getProducts('Earphone').then(data => createProductSlider(data, '#earphone-products', 'Earphones'))
+    </script>  
+</body>
+</html>

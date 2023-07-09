@@ -1,0 +1,8 @@
+AWS_ACCESS_KEY=AKIATRDUEXIH5WM2XHWC
+AWS_SECRET_KEY=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
+
+EMAIL=ecomrefurbish@gmail.com
+PASSWORD=vcavmencssvfvtgi
+
+stripe_key=sk_test_51N6WzkSFG9usnA0hUAlHBQAFRq2mR2YHDwzXeH1ApGY3idLnZ7tqIS2UTMUBdPuPdEJgk2C3fkg4uQeHsgNL1HF700eozDBnbx
+DOMAIN=http://localhost:3000

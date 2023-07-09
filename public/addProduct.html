@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Re-electronics</title>
+    
+    <link rel="stylesheet" href="../css/signup.css">
+    <link rel="stylesheet" href="../css/addProduct.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+1&family=Montserrat:wght@300&family=Poppins&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <img src="../img/loader.gif" class="loader" alt="">
+
+    <div class="alert-box">
+        <img src="../img/error.png" class="alert-img" alt="">
+        <p class="alert-msg"></p>
+    </div>
+
+    <img src="../img/logo.png" class="logo" alt="">
+
+    <div class="form">
+        <input type="text" id="product-name"  placeholder="Enter product name">
+        <select id="options" onchange="selectopt()">
+            <option class="inner-options" value="Select" selected>Choose product type</option>
+            <option class="inner-options" value="Desktop">Desktop</option>
+            <option class="inner-options" value="TV">TV</option>
+            <option class="inner-options" value="Laptop">Laptop</option>
+            <option class="inner-options" value="Mobile">Mobile</option>
+            <option class="inner-options" value="Earphone">Earphone</option>
+            <option class="inner-options" value="Smart Watch">Smart Watch</option>
+            <option class="inner-options" value="Tab">Tablet</option>
+            <option class="inner-options" value="Power Bank">Power Bank</option>
+            <option class="inner-options" value="Camera">Camera</option>
+            <option class="inner-options" value="Speaker">Speaker</option>
+            <option class="inner-options" value="Printer">Printer</option>
+            <option class="inner-options" value="Other">Other</option>
+        </select>
+        <select id="brandoptions" onchange="selectbrand()">
+            <option class="inner-options" value="Select" selected>Choose brand</option>
+        </select>
+        <textarea id="des" placeholder="Enter product description"></textarea>
+    </div>
+
+    <!--product image-->
+    <div class="product-info">
+        <div class="product-image"><p class="text"></p></div>
+        <div class="upload-image-sec">
+            <!--upload inputs-->
+            <p class="text"><img src="img/../camera.png" alt="">Upload images</p>
+            <div class="upload-catalouge">
+                <input type="file" class="fileupload" id="first-file-upload-btn" hidden>
+                <label for="first-file-upload-btn" class="upload-image"></label>
+                <input type="file" class="fileupload" id="second-file-upload-btn" hidden>
+                <label for="second-file-upload-btn" class="upload-image"></label>
+                <input type="file" class="fileupload" id="third-file-upload-btn" hidden>
+                <label for="third-file-upload-btn" class="upload-image"></label>
+                <input type="file" class="fileupload" id="fourth-file-upload-btn" hidden>
+                <label for="fourth-file-upload-btn" class="upload-image"></label>
+            </div>
+        </div>
+        <div class="product-price">
+            <input class="pricing" type="number" id="actual-price" placeholder="Price">
+            <!-- <input class="pricing" type="number" id="discount" placeholder="discount percentage"> -->
+            <!-- <input class="pricing" type="number" id="sell-price" placeholder="selling price"> -->
+            <select id="product-condition">
+                <option class="inner-options" value="Choose" selected>Product condition (optional)</option>
+                <option class="inner-options" value="Excellent">Excellent</option>
+                <option class="inner-options" value="Good">Good</option>
+                <option class="inner-options" value="Average">Average</option>
+                <option class="inner-options" value="Poor">Poor</option>
+            </select>
+        </div>
+    </div>
+    
+    
+    <br>
+    <br>
+
+    
+
+    <div class="buttons">
+       <button class="btn" id="add-btn">Add product</button>
+       <button class="btn" id="save-btn">Save Draft</button>
+    </div>
+
+
+    <script src="../js/token.js"></script>
+    <script src="../js/addProduct.js"></script>
+
+</body>
+</html>

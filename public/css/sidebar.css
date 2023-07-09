@@ -1,0 +1,84 @@
+/* Dropdown Button */
+.dropbtn {
+  background: none;
+  color: white;
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #3e8e41;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Hide submenu by default */
+.submenu {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Show submenu when parent is hovered */
+.dropdown-content a:hover + .submenu {
+  display: block;
+}
+
+/* Adjust positioning of submenu */
+.dropdown-content a:hover + .submenu {
+  left: 100%;
+  top: 0;
+}
+
+/* Adjust positioning of submenu */
+.submenu {
+  left: 100%;
+  top: 0;
+}
+
+/* Style the submenus */
+.submenu a {
+  padding: 8px 16px;
+}
+
+.submenu a:hover {
+  background-color: #ddd;
+}

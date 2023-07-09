@@ -1,0 +1,293 @@
+@import url('nav.css');
+@import url('footer.css');
+
+
+
+.hero-section{
+width: 100%;
+height: calc(100vh - 128px);
+
+background: url('../img/Home.jpg') no-repeat;
+
+background-size: cover;
+
+}
+
+.signin-up-btn{
+border: none;
+margin: 40px;
+margin-left: 50px;
+outline : none;
+/* background: rgb(41, 18, 143); */
+color: #fff;
+padding: 10px 30px;
+border-radius: 5px;
+text-transform: none;
+font-size: 14px;
+cursor: pointer;
+}
+
+#si{
+    background: green;
+    font-size: 18px;
+
+}
+
+#su{
+    background: yellow;
+    color: black;
+    font-size: 18px;
+    font-weight: 800;
+
+}
+
+#ex,#exelse{
+    background: yellow;
+    font-size: 18px;
+    font-weight: 800;
+    color: black;
+}
+
+#sell,#nosell{
+    background: yellow;
+    font-size: 18px;
+    font-weight: 800;
+    color: black;
+}
+
+.sign-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textinfo{
+    color: yellow;
+    padding-top: 230px;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+
+
+.hero-section .logo{
+
+height: 150px;
+display: block;
+margin: auto;
+}
+
+.hero-section .sub-heading{
+margin-top: 10px;
+text-align: center;
+color: #fff;
+text-transform: none;
+font-size: 35px;
+font-weight: 300;
+}
+
+
+.product{
+    position: relative;
+    overflow: hidden;
+    padding: 20px 0;
+}
+.product-category{
+    padding: 0 10vw;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom : 40px;
+    text-transform: none;
+}
+
+.product-container{
+padding: 0 10vw;
+display: flex;
+overflow-X : auto;
+scroll-behavior : smooth;
+}
+
+.product-container::-webkit-scrollbar{
+display: none;
+}
+
+.product-card{
+flex: 0 0 auto;
+width: 250px;
+height: 468px;
+margin-right: 40px;
+}
+
+.product-image{
+position: relative;
+width: 100%;
+height: 350px;
+overflow: hidden;
+border-radius: 10px;
+}
+
+.product-thumb{
+width: 100%;
+height: 350px;
+object-fit: cover;
+}
+
+.discount-tag{
+    position: absolute;
+    background: #fff;
+    padding: 5px;   
+    border-radius: 5px;
+    Color: #ff7d7d;
+    right: 10px;
+    top: 10px;
+    text-transform: none;    
+}
+
+.card-btn{
+position: absolute;
+bottom: 10px;
+left: 50%;
+transform: translateX(-50%);
+padding: 10px;
+width: 90%;
+text-transform: none;
+border: 2px solid rgb(171, 155, 155);
+outline : none;
+background:#fff;
+border-radius : 5px;
+transition: 0.5s;
+cursor: pointer;
+opacity : 0;
+}
+
+.product-card:hover .card-btn{
+    opacity:1;
+}
+
+.card-btn:hover{
+    background: #efefef;
+}
+
+.product-info{
+width: 100%;
+height: 100px;
+padding-top: 10px;
+}
+
+.product-brand{
+text-transform: uppercase;
+}
+
+.product-short-des{
+width: 100%;
+height: 20px;
+line-height: 20px;
+overflow: hidden;
+opacity: 0.5;
+text-transform: none;
+margin: 5px 0;
+}
+
+.price{
+font-weight: 900;
+font-size: 20px;
+}
+
+.actual-price{
+margin-left: 20px;
+opacity: 0.5;
+text-decoration : line-through;
+}
+
+
+.pre-btn,.nxt-btn{
+    border: none;   
+    width: 10vw;   
+    height: 100%;   
+    position: absolute;   
+    top: 0;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+    cursor: pointer;  
+    z-index: 8;
+}
+
+
+.pre-btn{
+    left: 0; 
+    transform: rotate(180deg); 
+}
+
+.nxt-btn{
+    right: 0;
+}   
+    
+.pre-btn i, .nxt-btn i{  
+    opacity: 0.2;
+}
+    
+.pre-btn:hover i, .nxt-btn:hover i{   
+    opacity: 1;
+}
+
+
+/*collections*/
+
+.collection-container{
+width: 100%;
+display: grid;
+grid-template-columns : repeat(2, 1fr);
+grid-gap: 10px;
+}
+
+.collection{
+position: relative;
+}
+
+.collection img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+
+.collection p{
+    position: absolute;
+    top: 50%;
+    left: 50%;   
+    transform: translate (-50%, -50%);
+    text-align: center;
+    color:#fff;
+    font-size: 50px;
+    text-transform : none;
+}   
+
+.collection:nth-child(3){
+    grid-column: span 2;
+    margin-bottom: 10px;
+}
+
+.innercontent{
+    padding-top: 150px;
+}
+
+#welcome-message{
+    margin-left: 30px;
+    font-size: 100px;
+    color: burlywood;
+    /* font-weight: 500; */
+}
+
+#ecom-message{
+    margin-left: 30px;
+    font-size: 100px;
+    color: burlywood;
+
+    /* font-weight: 500; */
+}
+
+

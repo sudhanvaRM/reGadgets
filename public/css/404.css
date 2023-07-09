@@ -1,0 +1,16 @@
+.four-0-four-image{
+    width: 1000px;
+    height: 300px;
+display: block;
+margin: 60px auto;
+}
+
+.four-0-four-msg{
+text-align: center;
+text-transform : none ;
+color: #383838;
+}
+
+.four-0-four-msg a{
+color: #383838;
+}

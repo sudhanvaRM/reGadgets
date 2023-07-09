@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Re-electronics</title>
+    <link rel="stylesheet" href="css/signup.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1&family=Montserrat:wght@300&family=Poppins&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <img src="img/loader.gif" class="loader">
+
+    <div class="container">
+        <img src="img/logo.png" alt="" class="logo">
+
+
+        <div class="alert-box">
+            <img src="img/error.png" alt="" class="alert-img">
+            <p class="alert-msg">Error message</p>
+        </div>
+
+        <div>
+            <input type="text" autocomplete="off" id="name" placeholder="Name">
+            <input type="email" autocomplete="off" id="email" placeholder="Email">
+            <input type="password" autocomplete="off" id="password" placeholder="Password">
+            <input type="text" autocomplete="off" id="number" placeholder="Contact">
+            <input type="checkbox" checked class="checkbox" id="terms-and-cond">
+            <label for="terms-and-cond">Agree to our <a href="">Terms and Conditions</a></label>
+            <br>
+            <button class="submit-btn">Create Account</button>
+        </div>
+        <a href="/login" class="link">Already have an account? Log in here</a>
+    </div>
+    <script src="js/form.js"></script>
+    <script src="js/token.js"></script>
+
+</body>
+</html>

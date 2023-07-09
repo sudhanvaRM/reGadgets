@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/sidebar.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+1&family=Montserrat:wght@300&family=Poppins&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+
+  <style>
+    .dashboard {
+      display: flex;
+      justify-content: space-around;
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+    .dashboard-item {
+      width: 330px;
+      height: 350px;
+      background-color: #9d9999;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.3s ease;
+    }
+
+    #customers-count,#sellers-count,#products-count,#orders-count{
+      margin-top: 20px;
+      font-size: 40px;
+    }
+    .dashboard-item:hover {
+      background-color: #e0e0e0;
+    }
+
+    .dashboard-item h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <!--navigation content in nav.js--> 
+  </nav> 
+  <div class="dashboard">
+    <div class="dashboard-item">
+      <h2>Customers</h2>
+      <div id="customers-count">0</div>
+    </div>
+    <div class="dashboard-item">
+      <h2>Sellers</h2>
+      <div id="sellers-count">0</div>
+    </div>
+    <div class="dashboard-item">
+      <h2>Products</h2>
+      <div id="products-count">0</div>
+    </div>
+    <div class="dashboard-item">
+      <h2>Orders</h2>
+      <div id="orders-count">0</div>
+    </div>
+  </div>
+
+  <script src="js/nav.js"></script> 
+  <script src="js/admin.js"></script> 
+
+</body>
+</html>

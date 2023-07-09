@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller Dashboard</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="css/signup.css">
+    <link rel="stylesheet" href="css/seller.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+
+    <script src="https://kit.fontawesome.com/48255ccbf9.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+1&family=Montserrat:wght@300&family=Poppins&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- <nav class="navbar">
+    </nav> -->
+    <img src="img/loader.gif" class="loader" alt="">
+
+
+    <div class="alert-box">
+        <img src="img/error.png" alt="" class="alert-img">
+        <p class="alert-msg">Error message</p>
+    </div>
+
+    <img src="img/logo.png" alt="" class="logo">
+
+    <!--become seller element-->
+    <div class="become-seller hide">
+        <p class="heading" style="margin-left: 120px;">Become a Seller</p>
+        <p class="des">Welcome to Re-Electronics!!!!.This is the best platform to 
+            sell your products online and find a suitable buyer for your product.
+            You can sell your products for a reasonable price such that it attracts our customers .
+            Embark your amazing journey as a seller on our platform.
+          </p>
+        <button class="btn" style="margin-left: 247px;" id="apply-btn">Apply for Seller Account</button>
+    </div>
+
+    <!--apply form-->
+    <div class="apply-form hide">
+        <input type="text" id="business-name" placeholder="Enter your Name/ Business name / Company name / Shop name">
+        <textarea id="business-add" placeholder="Enter pickup address for your products"></textarea>
+        <textarea id="about" placeholder="About"></textarea>
+        <input type="text" id="number" placeholder="Contact">
+        <input type="checkbox" checked class="checkbox" id="terms-and-cond">
+        <label for="terms-and-cond">Agree to our <a href="">Terms and Conditions</a></label>
+        <br>
+        <input type="checkbox" checked class="checkbox" id="legitInfo">
+        <label for="legitInfo">All information is legit</label>
+        <button class="submit-btn" id="apply-form-btn">Apply</button>
+    </div>
+
+    <!--products list-->
+    <div class="product-listing hide">
+        <div class="add-product">
+            <p class="add-product-title">Add product</p>
+            <button class="btn" onclick="location.href = '/add-product'">Add Product</button>
+        </div>
+        <img src="img/no-products.jpeg" class="no-product-image hide" alt="" class="no-product-image">
+
+        <!-- delete alert-->
+        <div class="delete-alert">
+            <div class="alert">
+                <button class="close-btn"><img src="img/close.png" alt=""></button>
+                <img src="img/delete-warning.png" class="delete-svg"  alt="">
+                <p class="text">Are you sure you want to delete this product ?</p>
+                <button class="delete-btn">Delete</button>
+
+            </div>
+        </div>
+
+
+        <!--cards-->
+        <div class="product-container">
+             <!-- <div class="product-card">
+                <div class="product-image">
+                    <span class="tag">Draft</span>
+                    <img src="img/shirt2.jpg" alt="" class="product-thumb">
+                    <button class="card-action-btn edit-btn"><img src="img/edit.png" alt=""></button>
+                    <button class="card-action-btn open-btn"><img src="img/share.png" alt=""></button>
+                    <button class="card-action-btn delete-popup-btn"><img src="img/delete.png" alt=""></button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">brand</h2>
+                    <p class="product-short-des">a short line about the cloth</p>
+                    <span class="price">449</span><span class="actual-price">999</span>
+                </div>
+            </div> 
+
+        </div> -->
+    </div>
+
+    <script src="js/token.js"></script>
+    <script src="js/createProduct.js"></script>
+    <script src="js/seller.js"></script>
+    <script src="js/nav.js"></script> 
+</body>
+
+</html>
