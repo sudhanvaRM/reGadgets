@@ -1,8 +1,0 @@
-AWS_ACCESS_KEY=#
-AWS_SECRET_KEY=#
-
-EMAIL=#
-PASSWORD=#
-
-stripe_key=#
-DOMAIN=http://localhost:3000
